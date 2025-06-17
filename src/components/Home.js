@@ -28,7 +28,7 @@ export default function Home() {
   }, [])
   return (
     <>
-      <div className="container home d-flex justify-content-between align-items-center" id='home'
+      <div className="container home d-flex flex-wrap justify-content-between align-items-center" id='home' style={{gap:"7rem"}}
       data-aos="fade-up-right"
       data-aos-duration="1000">
         <div className="home-left">

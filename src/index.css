@@ -1,51 +1,70 @@
-/* Whole Project */
-:root{
-  --box-shadow:5px 5px 10px 10px rgb(101, 175, 10, 0.5);
-  --bg-color:rgb(40, 47, 97);
-
+:root {
+  --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+  --bg-color: rgb(40, 47, 97);
 }
+
 body {
   background-color: rgb(11, 26, 51);
   color: white;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-/* Navbar */
 a {
   text-decoration: none;
   color: white;
 }
 
+.app-wrapper {
+  width: 100%;
+  background-color: #0a1026;
+}
+
+.center-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar */
 .navIteams {
   padding: 16px;
-  font-size:1.2rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 .navbar .navIteams:hover {
- border-bottom: 3px solid yellow;
+  border-bottom: 3px solid yellow;
 }
 
-
 /* Home Section */
-
 .home {
-  height: 80vh;
+  width: 100%;
+  padding: 2rem 0;
 }
 
 .home-left {
-  background-color:var(--bg-color) ;
-  width: 620px;
+  background-color: var(--bg-color);
+  width: 100%;
+  max-width: 620px;
   text-align: center;
   padding: 30px;
   border-radius: 10px;
   border: 1px solid yellow;
   box-shadow: var(--box-shadow);
+  margin: 0 auto;
 }
 
 .right.left {
   background-color: black;
 }
- .img img {
+
+.img img {
   height: 270px;
   width: 270px;
   border-radius: 100%;
@@ -53,62 +72,60 @@ a {
   animation-name: superman;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  
 }
 
-@keyframes superman{
-  0%{
-   border-color: blue;
-   transform: translate(0, 0px);
-   box-shadow: 10px 10px 100px 50px blue;
+@keyframes superman {
+  0% {
+    border-color: blue;
+    transform: translate(0, 0px);
+    box-shadow: 10px 10px 100px 50px blue;
   }
-  25%{
+  25% {
     border-color: rgb(239, 244, 11);
-   box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+    box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
   }
-  50%{
+  50% {
     border-color: rgb(12, 12, 199);
-   transform: translate(0, 10px);
-   box-shadow: 10px 10px 100px 50px rgb(12, 12, 199);
+    transform: translate(0, 10px);
+    box-shadow: 10px 10px 100px 50px rgb(12, 12, 199);
   }
-  75%{
+  75% {
     border-color: rgb(130, 217, 160);
     box-shadow: 10px 10px 100px 50px rgb(130, 217, 160);
   }
-  100%{
+  100% {
     border-color: rgb(50, 55, 205);
     transform: translate(0, 0px);
     box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
   }
 }
 
-
-/* experince Section */
-
+/* Experience Section */
 .ex {
-  width: 900px;
-}
-
-.left img{
-  width: 12rem;
-  margin-top: 30%;
+  width: 100%;
+  max-width: 900px;
 }
 
 .ex-item {
   background-color: var(--bg-color);
-  margin: 20px;
+  margin: 20px auto;
   padding: 30px;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   border: 1px solid yellow;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
+}
 
+.left img {
+  width: 12rem;
+  margin-top: 30%;
 }
 
 /* Skills Section */
-
 .skills {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
 }
 
 .item img {
@@ -116,29 +133,31 @@ a {
 }
 
 .home-card {
-  background-color:var(--bg-color) ;
-  width: 320px;
+  background-color: var(--bg-color);
+  width: 100%;
+  max-width: 320px;
   text-align: center;
   padding: 30px;
   border-radius: 10px;
   border: 1px solid yellow;
   box-shadow: var(--box-shadow);
   margin-top: 20px;
-
 }
 
-
-
-/* Projects section */
-
-
-/* CONTACT section */
+/* Contact Section */
+.contact {
+  padding: 2rem;
+  text-align: center;
+}
 
 .contact-icon {
-  height: 30vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  gap: 10px;
 }
 
 .contact-icon .items {
@@ -151,35 +170,14 @@ a {
   align-items: center;
   border-radius: 100%;
   border: 1px solid yellow;
+  font-size: 2rem;
+  transition: 0.3s ease;
 }
 
 .contact-icon .items:hover {
   background-color: var(--bg-color);
   box-shadow: var(--box-shadow);
-}
-
-.contact-icon .items .icons {
-  font-size: 2rem;
-}
-
-.contact {
-  padding: 2rem;
-  text-align: center;
-}
-
-.contact-icon {
-  margin-bottom: 2rem;
-}
-
-.contact-icon .items {
-  margin: 0 10px;
-  font-size: 2rem;
-  color: #333;
-  transition: 0.3s ease;
-}
-
-.contact-icon .items:hover {
-  color: #0077b5; /* LinkedIn blue shade for hover effect */
+  color: #0077b5;
 }
 
 .contact-form {
@@ -189,6 +187,8 @@ a {
   gap: 1rem;
   max-width: 500px;
   margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
 }
 
 .contact-form input,
@@ -215,3 +215,201 @@ a {
 }
 
 
+@media (max-width: 768px) {
+  .home-left {
+    padding: 20px;
+  }
+
+  .img img {
+    height: 180px;
+    width: 180px;
+  }
+
+  .left img {
+    width: 8rem;
+    margin-top: 10%;
+  }
+
+  .item img {
+    width: 50px;
+  }
+
+  .home-card {
+    padding: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-left,
+  .ex-item,
+  .skills,
+  .ex {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .img img {
+    height: 220px;
+    width: 220px;
+  }
+
+  .left img {
+    width: 10rem;
+    margin-top: 20%;
+  }
+
+  .item img {
+    width: 60px;
+  }
+
+  .home-card {
+    max-width: 100%;
+    padding: 25px;
+  }
+}
+
+/* === BASE RESPONSIVENESS === */
+.container {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Flex wrap for navbar on small screens */
+.navbar {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.navbar .left {
+  font-size: 1.5rem;
+}
+
+/* Ensure navbar links stack neatly on mobile */
+@media (max-width: 768px) {
+  .navbar .right {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .navIteams {
+    padding: 8px;
+    font-size: 1rem;
+  }
+}
+
+/* === HOME SECTION === */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .home-left {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .img {
+    margin-top: 1rem;
+  }
+
+  .img img {
+    height: 160px;
+    width: 160px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .home-left {
+    padding: 25px;
+    width: 90%;
+  }
+
+  .img img {
+    height: 220px;
+    width: 220px;
+  }
+}
+
+/* === EXPERIENCE SECTION === */
+@media (max-width: 768px) {
+  .ex-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left img {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .right {
+    width: 100%;
+  }
+}
+
+/* === SKILLS SECTION === */
+@media (max-width: 768px) {
+  .skills .items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-card {
+    max-width: 90%;
+  }
+}
+
+/* === PROJECTS SECTION === */
+@media (max-width: 768px) {
+  .projects .card {
+    width: 100% !important;
+    margin: 0 auto 1.5rem;
+  }
+
+  .card img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* === CONTACT SECTION === */
+@media (max-width: 768px) {
+  .contact-icon {
+    gap: 0.5rem;
+  }
+
+  .contact-icon .items {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}

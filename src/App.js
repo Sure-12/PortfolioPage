@@ -5,25 +5,26 @@ import Skill from "./components/Skill";
 import Projects from "./components/Projects";
 import Contact from "./components/contact";
 import Aos from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-
 function App() {
-  useEffect(()=>{
-      Aos.init();
-  },[])
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <>
-      <div className="container">
+      <div className="app-wrapper">
         <Navbar />
-        <Home />
-        <Experince />
-        <Skill/>
-        <Projects/>
-       <Contact/>
+        <div className="center-container">
+          <Home />
+          <Experince />
+          <Skill />
+          <Projects />
+          <Contact />
+        </div>
       </div>
-
     </>
   );
 }
