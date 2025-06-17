@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "role": ".Net + Angular Intern",
+    "organisation": "Skywinds Solutions Pvt. Ltd",
+    "startDate": "Feb, 2024",
+    "endDate": "May 2024",
+    "location": "Ahmedabad, Gujarat, India",
+    "experiences": [
+      "Worked on  Live Project",
+      "Worked as Fronted Developer"
+    ],
+    "imageSrc": "company/Skywinds Company img.webp"
+  }
+]
