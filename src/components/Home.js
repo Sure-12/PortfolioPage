@@ -33,7 +33,7 @@ export default function Home() {
       data-aos-duration="1000">
         <div className="home-left">
           <h1 ref={typedRef}></h1>
-          <a href={resume} download="SureshSodha_Resume.pdf" className="btn btn-outline-warning my-3">Download Resume</a>
+          <a href={resume} download="Sodha_Suresh_Resume.pdf" className="btn btn-outline-warning my-3">Download Resume</a>
         </div>
         <div className="right"></div>
         <div className="img d-flex justify-content-center align-items-center"
